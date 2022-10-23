@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
     <link
       rel="icon"
       type="image/png"
@@ -12,6 +11,7 @@
     />
     <title>Frontend Mentor | News homepage</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="navbar.css">
   </head>
   <body>
     <header>
@@ -22,6 +22,10 @@
               <img src="./assets/images/logo.svg" alt="" />
             </div>
             <div class="nav-links">
+              <input type="checkbox" id="check">
+              <label for="check">
+                <img class="checkbtn" src="./assets/images/icon-menu.svg" alt="">
+              </label>
               <ul class="links">
                 <li class="link"><a class="active" href="#">Home</a></li>
                 <li class="link"><a href="#">New</a></li>
@@ -43,18 +47,18 @@
           </div>
           <div class="news">
             <h2 class="sidebar-title">New</h2>
-            <h3 class="sidebar-subtitle">Hydrogen VS Electric Cars</h3>
+            <a href="#" class="sidebar-subtitle"><span class="rightarrow">&rarrc;</span> Hydrogen VS Electric Cars</a>
             <p class="sidebar-paragraph">
               Will hydrogen-fueled cars ever catch up to EVs?
             </p>
             <hr class="sidebar-hr" />
-            <h3 class="sidebar-subtitle">The Downsides of AI Artistry</h3>
+            <a href="#" class="sidebar-subtitle"><span class="rightarrow">&rarrc;</span> The Downsides of AI Artistry</a>
             <p class="sidebar-paragraph">
               What are the possible adverse effects of on-demand AI image
               generation?
             </p>
             <hr class="sidebar-hr" />
-            <h3 class="sidebar-subtitle">Is VC Funding Drying Up?</h3>
+            <a href="#" class="sidebar-subtitle"><span class="rightarrow">&rarrc;</span> Is VC Funding Drying Up?</a>
             <p class="sidebar-paragraph">
               Private funding by VC firms is down 50% YOY. We take a look at
               what that means.
@@ -108,17 +112,6 @@
         </div>
       </section>
     </main>
-    <!-- Home New Popular Trending Categories The Bright Future of Web 3.0? We dive
-    into the next evolution of the web that claims to put the power of the
-    platforms back into the hands of the people. But is it really fulfilling its
-    promise? Read more New Hydrogen VS Electric Cars Will hydrogen-fueled cars
-    ever catch up to EVs? The Downsides of AI Artistry What are the possible
-    adverse effects of on-demand AI image generation? Is VC Funding Drying Up?
-    Private funding by VC firms is down 50% YOY. We take a look at what that
-    means. 01 Reviving Retro PCs What happens when old PCs are given modern
-    upgrades? 02 Top 10 Laptops of 2022 Our best picks for various needs and
-    budgets. 03 The Growth of Gaming How the pandemic has sparked fresh
-    opportunities. -->
     <footer>
       <div class="footer">
         Challenge by

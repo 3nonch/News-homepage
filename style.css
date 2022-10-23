@@ -14,6 +14,7 @@ html {
 
 .mobile-img {
   display: none;
+  animation: moveInRight 1s ease-in-out;
 }
 
 .hero-grid {
@@ -38,7 +39,7 @@ html {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1080px;
   margin: 0 auto;
   padding: 0 2rem;
 }

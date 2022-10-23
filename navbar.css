@@ -1,0 +1,50 @@
+/* 
+.checkbox, .checkbtn, input, label {
+    display: none;
+} */
+
+.checkbtn {
+  float: right;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    background-color: #fff;
+    top: 6rem;
+    width: 65%;
+    height: 100vh;
+    right: -100%;
+    padding: 5rem;
+    transition: all 0.33s ease-in-out;
+  }
+
+  nav ul li.link {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 2rem;
+    padding: 1rem 0;
+  }
+
+  nav ul li.link {
+    font-size: 15px;
+  }
+
+  nav ul li.link .active {
+    border-left: 2px solid hsl(5, 85%, 63%);
+    padding: 0 1rem;
+  }
+
+  #check:checked ~ ul {
+    right: 0;
+  }
+}
